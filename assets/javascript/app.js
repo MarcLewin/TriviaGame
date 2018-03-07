@@ -80,7 +80,7 @@ function newQuestion() {
 }
 
 function countdown() {
-    $('#time').show();
+    
     seconds = 10;
     $('#time').html('<h3>You have ' + seconds + ' seconds to answer </h3>');
     answered = true;

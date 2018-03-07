@@ -149,8 +149,11 @@ function scoreboard() {
     $('#restartBtn').addClass('reset');
     $('#restartBtn').show();
     $('#restartBtn').html('Click me to Play again');
-    if (correctAnswer >= 4){
-         $('#image').append('<img src="https://github.com/MarcLewin/TriviaGame/blob/master/assets/images/PeterPan.png?raw=true" >' );
-    }
-
+//     if (correctAnswer >= 4){
+//         $('answerMessage').html("You know A Lot about Pan!");
+//          $('#image').append('<img src="https://github.com/MarcLewin/TriviaGame/blob/master/assets/images/PeterPan.png?raw=true" >' );
+//         }else if (correctAnswer >=3){
+//         $('#image').append('<img src="https://github.com/MarcLewin/TriviaGame/blob/master/assets/images/lostBoys.png?raw=true" >' );
+//     }
+// $('#image)').empty();
 }

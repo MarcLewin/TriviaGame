@@ -150,7 +150,7 @@ function scoreboard() {
     $('#restartBtn').show();
     $('#restartBtn').html('Click me to Play again');
     if (correctAnswer >= 4){
-         $('#image').append('<img src="images/PeterPan.png" >' );
+         $('#image').append('<img src="https://github.com/MarcLewin/TriviaGame/blob/master/assets/images/PeterPan.png?raw=true" >' );
     }
 
 }

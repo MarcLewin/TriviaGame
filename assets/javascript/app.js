@@ -30,11 +30,6 @@ var seconds;
 var time;
 var answered;
 var userSelect;
-var messages = {
-    correct: "That is correct",
-    incorrect: "That is not correct",
-    finished: "Let's see how well you know Pan"
-}
 
 $('#playBtn').on('click', function () {
     $(this).hide();
@@ -85,6 +80,7 @@ function newQuestion() {
 }
 
 function countdown() {
+    $('#time').show();
     seconds = 10;
     $('#time').html('<h3>You have ' + seconds + ' seconds to answer </h3>');
     answered = true;
@@ -120,10 +116,10 @@ function answerPage() {
 
     if ((userSelect == rightAnswerIndex) && (answered == true)) {
         correctAnswer++;
-        $('#message').html(messages.correct);
+        $('#message').text("You chose Correct!");
     } else if ((userSelect != rightAnswerIndex) && (answered == true)) {
         incorrectAnswer++;
-        $('#message').html(messages.incorrect);
+        $('#message').text("Wrong answer!");
         $('#rightAnswer').html('Correct answer was: ' + rightAnswerText);
     } else {
         unanswered++;
@@ -146,11 +142,12 @@ function scoreboard() {
     $('#rightAnswer').empty();
     
 
-    $('#finishedMessage').html(messages.finished);
+    $('#finishedMessage').text("Let's see how well you know Pan:");
     $('#correctAnswers').html("Correct Answers: " + correctAnswer);
     $('#incorrectAnswers').html("Incorrect Answers: " + incorrectAnswer);
     $('#unanswered').html("Unanswered: " + unanswered);
     $('#restartBtn').addClass('reset');
     $('#restartBtn').show();
     $('#restartBtn').html('Click me to Play again');
+
 }

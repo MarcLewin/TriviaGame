@@ -3,13 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trivia Game</title>
+    <title>Peter Pan Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
 <body>
+        <div class='container'>
+                <button class="btn btn-danger" id='playButton'>Play</button>
+                <!-- Questions -->
+                <div id=time></div>
+                <div id=presentQuestion></div>
+                <div class='question'></div>
+                <div class='answers'></div>
+                <!-- Answers -->
+                <div id=answerMessage></div>
+                <div id=correctedAnswer></div>
+                <div id=gif></div>
+                <!--  Final Score -->
+                <div id=finalMessage></div>
+                <div id=correctAnswers></div>
+                <div id=wrongAnswers></div>
+                <div id=notAnswered></div>
+                <div id='restartBtn'></div>
+            </div>
 
-    <script src="javascript.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>

@@ -149,5 +149,8 @@ function scoreboard() {
     $('#restartBtn').addClass('reset');
     $('#restartBtn').show();
     $('#restartBtn').html('Click me to Play again');
+    if (correctAnswer >= 4){
+         $('#image').append('<img src="images/PeterPan.png" >' );
+    }
 
 }
